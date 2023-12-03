@@ -6345,6 +6345,7 @@ html {
   color: var(--fgALUw);
   padding: 8px;
   page-break-inside: avoid;
+  width: 30%;
 }
 ._0krA5g:hover {
   background-color: var(--8ZR-UA);
@@ -7811,6 +7812,8 @@ html {
   background: var(--M1YLEg);
   border-radius: 16px;
   padding: 16px 0;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 @media (min-width: 600px) {
   .vWopTw {
@@ -7844,9 +7847,17 @@ html {
   content: "";
   padding-right: 24px;
 }
+.EtPtOA {
+  margin: 32px 0; 
+  padding: 0 24px;
+}
+.EtPtOA:after {
+  content: "";
+  padding-right: 24px;
+}
 .oJzAeQ {
   flex: 0 0 280px;
-  margin-right: 24px;
+  margin-bottom: 20px;
 }
 .oJzAeQ:last-child {
   margin-right: 0;
@@ -7862,9 +7873,6 @@ html {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .oJzAeQ {
-    margin: 0;
-  }
 }
 @media (min-width: 600px) {
   .EtPtOA {
@@ -7876,7 +7884,7 @@ html {
 }
 @media (min-width: 900px) {
   .EtPtOA {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .A2TSVQ {
@@ -11213,8 +11221,9 @@ html {
   height: 100%;
 }
 body {
-  overflow: hidden;
-  touch-action: manipulation;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow: auto;
 }
 html {
   font-size: 62.5%;
@@ -11242,9 +11251,6 @@ html.EHoceA {
 }
 :root:lang(ko) {
   word-break: keep-all;
-}
-body {
-  -webkit-overflow-scrolling: touch;
 }
 .yIDCqA {
   -webkit-tap-highlight-color: transparent;
